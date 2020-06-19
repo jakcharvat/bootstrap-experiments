@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Firebase Read Write</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+</head>
+
+<body>
+    <h1>Book Info</h1><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
+<script>
+var firebaseConfig = {
+  apiKey: "AIzaSyAgY7b9DJEa8tdzrQzo6g9ElWNh_BMaMtc",
+  authDomain: "others-cb955.firebaseapp.com",
+  databaseURL: "https://others-cb955.firebaseio.com",
+  projectId: "others-cb955",
+  storageBucket: "others-cb955.appspot.com",
+  messagingSenderId: "119103089847",
+  appId: "1:119103089847:web:a4469bc8021cafa273b132",
+  measurementId: "G-YTKRQ8FKJD"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+</script>
+    <div class="container text-center">
+        <div class="card hide" id="bookCard" style="margin-right: 120px;margin-left: 120px;">
+            <div class="card-body">
+                <h2 class="card-title"><span id="bookName">Book Name</span><span id="bookChapter" style="color: rgba(255,255,255,0.59);font-size: 24px;margin-left: 16px;">Chapter Number</span></h2>
+                <h4 class="text-muted card-subtitle mb-2" id="bookTags">Tags</h4>
+                <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+            </div>
+        </div><span class="spinner-border spinner-border-sm text-left" role="status" id="loadingSpinner"></span></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+</body>
+
+</html>
